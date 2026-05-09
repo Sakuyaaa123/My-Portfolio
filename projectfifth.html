@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila Yu | Project 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+
+    <header>
+    <h3>My Portfolio</h3>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="titlep" class="hero fade">
+        <h1><span id="namee">Pabili! Sari-sari Store Simulator</span></h1>
+        <p class="projectp">This served as my Senior Capstone project, representing the culmination of my university studies. 
+            I handled a broad spectrum of the development cycle, including Game Design, Programming, and the complete Art 
+            Pipeline (Concept Art, Character Design, and Animation through Rigging in Unity).</p>
+    </section>
+
+    <section id="pics" class="project fade">
+        <h1 class="projecttop topname">Gallery</h1>
+        <div class="projects">
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\Logo_Final.png">
+                </div>
+                <div class="caption">Game Logo/Icon</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\mccc.png">
+                </div>
+                <div class="caption">Player</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\bumbayyy.png">
+                </div>
+                <div class="caption">Debt Collector</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus1.png">
+                </div>
+                <div class="caption">Customer 1</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus2.png">
+                </div>
+                <div class="caption">Customer 2</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus3.png">
+                </div>
+                <div class="caption">Customer 3</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus4.png">
+                </div>
+                <div class="caption">Customer 4</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus5.png">
+                </div>
+                <div class="caption">Customer 5</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus6.png">
+                </div>
+                <div class="caption">Customer 6</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus7.png">
+                </div>
+                <div class="caption">Customer 7</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pabiliiiii\extra\cus8.png">
+                </div>
+                <div class="caption">Customer 8</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\extra\mccc1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\extra\mccc2.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\extra\mccc3.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\extra\mccc1.png">
+                    <img src="pabiliiiii\extra\mccc2.png">
+                    <img src="pabiliiiii\extra\mccc3.png">
+                </div>
+
+                <div class="caption">Player Expression Frames</div>
+            </div>
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\extra\bumbayyy1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\extra\bumbayyy2.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\extra\bumbayyy3.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\extra\bumbayyy1.png">
+                    <img src="pabiliiiii\extra\bumbayyy2.png">
+                    <img src="pabiliiiii\extra\bumbayyy3.png">
+                </div>
+
+                <div class="caption">Debt Collector Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer1\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer1\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer1\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer1\01.png">
+                    <img src="pabiliiiii\Customer1\02.png">
+                    <img src="pabiliiiii\Customer1\03.png">
+                    <img src="pabiliiiii\Customer1\04.png">
+                    <img src="pabiliiiii\Customer1\05.png">
+                    <img src="pabiliiiii\Customer1\06.png">
+                    <img src="pabiliiiii\Customer1\07.png">
+                    <img src="pabiliiiii\Customer1\08.png">
+                    <img src="pabiliiiii\Customer1\09.png">
+                    <img src="pabiliiiii\Customer1\10.png">
+                    <img src="pabiliiiii\Customer1\11.png">
+                    <img src="pabiliiiii\Customer1\12.png">
+                    <img src="pabiliiiii\Customer1\13.png">
+                    <img src="pabiliiiii\Customer1\14.png">
+                    <img src="pabiliiiii\Customer1\15.png">
+                    <img src="pabiliiiii\Customer1\16.png">
+                    <img src="pabiliiiii\Customer1\17.png">
+                    <img src="pabiliiiii\Customer1\18.png">
+                    <img src="pabiliiiii\Customer1\19.png">
+                    <img src="pabiliiiii\Customer1\20.png">
+                    <img src="pabiliiiii\Customer1\21.png">
+                    <img src="pabiliiiii\Customer1\22.png">
+                    <img src="pabiliiiii\Customer1\23.png">
+                    <img src="pabiliiiii\Customer1\24.png">
+                    <img src="pabiliiiii\Customer1\25.png">
+                    <img src="pabiliiiii\Customer1\26.png">
+                    <img src="pabiliiiii\Customer1\27.png">
+                </div>
+
+                <div class="caption">Customer 1 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer2\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer2\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer2\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer2\01.png">
+                    <img src="pabiliiiii\Customer2\02.png">
+                    <img src="pabiliiiii\Customer2\03.png">
+                    <img src="pabiliiiii\Customer2\04.png">
+                    <img src="pabiliiiii\Customer2\05.png">
+                    <img src="pabiliiiii\Customer2\06.png">
+                    <img src="pabiliiiii\Customer2\07.png">
+                    <img src="pabiliiiii\Customer2\08.png">
+                    <img src="pabiliiiii\Customer2\09.png">
+                    <img src="pabiliiiii\Customer2\10.png">
+                    <img src="pabiliiiii\Customer2\11.png">
+                    <img src="pabiliiiii\Customer2\12.png">
+                    <img src="pabiliiiii\Customer2\13.png">
+                    <img src="pabiliiiii\Customer2\14.png">
+                    <img src="pabiliiiii\Customer2\15.png">
+                    <img src="pabiliiiii\Customer2\16.png">
+                    <img src="pabiliiiii\Customer2\17.png">
+                    <img src="pabiliiiii\Customer2\18.png">
+                    <img src="pabiliiiii\Customer2\19.png">
+                    <img src="pabiliiiii\Customer2\20.png">
+                    <img src="pabiliiiii\Customer2\21.png">
+                    <img src="pabiliiiii\Customer2\22.png">
+                    <img src="pabiliiiii\Customer2\23.png">
+                    <img src="pabiliiiii\Customer2\24.png">
+                    <img src="pabiliiiii\Customer2\25.png">
+                    <img src="pabiliiiii\Customer2\26.png">
+                    <img src="pabiliiiii\Customer2\27.png">
+                </div>
+
+                <div class="caption">Customer 2 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer3\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer3\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer3\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer3\01.png">
+                    <img src="pabiliiiii\Customer3\02.png">
+                    <img src="pabiliiiii\Customer3\03.png">
+                    <img src="pabiliiiii\Customer3\04.png">
+                    <img src="pabiliiiii\Customer3\05.png">
+                    <img src="pabiliiiii\Customer3\06.png">
+                    <img src="pabiliiiii\Customer3\07.png">
+                    <img src="pabiliiiii\Customer3\08.png">
+                    <img src="pabiliiiii\Customer3\09.png">
+                    <img src="pabiliiiii\Customer3\10.png">
+                    <img src="pabiliiiii\Customer3\11.png">
+                    <img src="pabiliiiii\Customer3\12.png">
+                    <img src="pabiliiiii\Customer3\13.png">
+                    <img src="pabiliiiii\Customer3\14.png">
+                    <img src="pabiliiiii\Customer3\15.png">
+                    <img src="pabiliiiii\Customer3\16.png">
+                    <img src="pabiliiiii\Customer3\17.png">
+                    <img src="pabiliiiii\Customer3\18.png">
+                    <img src="pabiliiiii\Customer3\19.png">
+                    <img src="pabiliiiii\Customer3\20.png">
+                    <img src="pabiliiiii\Customer3\21.png">
+                    <img src="pabiliiiii\Customer3\22.png">
+                    <img src="pabiliiiii\Customer3\23.png">
+                    <img src="pabiliiiii\Customer3\24.png">
+                    <img src="pabiliiiii\Customer3\25.png">
+                    <img src="pabiliiiii\Customer3\26.png">
+                    <img src="pabiliiiii\Customer3\27.png">
+                </div>
+
+                <div class="caption">Customer 3 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer4\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer4\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer4\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer4\01.png">
+                    <img src="pabiliiiii\Customer4\02.png">
+                    <img src="pabiliiiii\Customer4\03.png">
+                    <img src="pabiliiiii\Customer4\04.png">
+                    <img src="pabiliiiii\Customer4\05.png">
+                    <img src="pabiliiiii\Customer4\06.png">
+                    <img src="pabiliiiii\Customer4\07.png">
+                    <img src="pabiliiiii\Customer4\08.png">
+                    <img src="pabiliiiii\Customer4\09.png">
+                    <img src="pabiliiiii\Customer4\10.png">
+                    <img src="pabiliiiii\Customer4\11.png">
+                    <img src="pabiliiiii\Customer4\12.png">
+                    <img src="pabiliiiii\Customer4\13.png">
+                    <img src="pabiliiiii\Customer4\14.png">
+                    <img src="pabiliiiii\Customer4\15.png">
+                    <img src="pabiliiiii\Customer4\16.png">
+                    <img src="pabiliiiii\Customer4\17.png">
+                    <img src="pabiliiiii\Customer4\18.png">
+                    <img src="pabiliiiii\Customer4\19.png">
+                    <img src="pabiliiiii\Customer4\20.png">
+                    <img src="pabiliiiii\Customer4\21.png">
+                    <img src="pabiliiiii\Customer4\22.png">
+                    <img src="pabiliiiii\Customer4\23.png">
+                    <img src="pabiliiiii\Customer4\24.png">
+                    <img src="pabiliiiii\Customer4\25.png">
+                    <img src="pabiliiiii\Customer4\26.png">
+                    <img src="pabiliiiii\Customer4\27.png">
+                </div>
+
+                <div class="caption">Customer 4 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer5\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer5\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer5\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer5\01.png">
+                    <img src="pabiliiiii\Customer5\02.png">
+                    <img src="pabiliiiii\Customer5\03.png">
+                    <img src="pabiliiiii\Customer5\04.png">
+                    <img src="pabiliiiii\Customer5\05.png">
+                    <img src="pabiliiiii\Customer5\06.png">
+                    <img src="pabiliiiii\Customer5\07.png">
+                    <img src="pabiliiiii\Customer5\08.png">
+                    <img src="pabiliiiii\Customer5\09.png">
+                    <img src="pabiliiiii\Customer5\10.png">
+                    <img src="pabiliiiii\Customer5\11.png">
+                    <img src="pabiliiiii\Customer5\12.png">
+                    <img src="pabiliiiii\Customer5\13.png">
+                    <img src="pabiliiiii\Customer5\14.png">
+                    <img src="pabiliiiii\Customer5\15.png">
+                    <img src="pabiliiiii\Customer5\16.png">
+                    <img src="pabiliiiii\Customer5\17.png">
+                    <img src="pabiliiiii\Customer5\18.png">
+                    <img src="pabiliiiii\Customer5\19.png">
+                    <img src="pabiliiiii\Customer5\20.png">
+                    <img src="pabiliiiii\Customer5\21.png">
+                    <img src="pabiliiiii\Customer5\22.png">
+                    <img src="pabiliiiii\Customer5\23.png">
+                    <img src="pabiliiiii\Customer5\24.png">
+                    <img src="pabiliiiii\Customer5\25.png">
+                    <img src="pabiliiiii\Customer5\26.png">
+                    <img src="pabiliiiii\Customer5\27.png">
+                </div>
+
+                <div class="caption">Customer 5 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer6\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer6\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer6\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer6\01.png">
+                    <img src="pabiliiiii\Customer6\02.png">
+                    <img src="pabiliiiii\Customer6\03.png">
+                    <img src="pabiliiiii\Customer6\04.png">
+                    <img src="pabiliiiii\Customer6\05.png">
+                    <img src="pabiliiiii\Customer6\06.png">
+                    <img src="pabiliiiii\Customer6\07.png">
+                    <img src="pabiliiiii\Customer6\08.png">
+                    <img src="pabiliiiii\Customer6\09.png">
+                    <img src="pabiliiiii\Customer6\10.png">
+                    <img src="pabiliiiii\Customer6\11.png">
+                    <img src="pabiliiiii\Customer6\12.png">
+                    <img src="pabiliiiii\Customer6\13.png">
+                    <img src="pabiliiiii\Customer6\14.png">
+                    <img src="pabiliiiii\Customer6\15.png">
+                    <img src="pabiliiiii\Customer6\16.png">
+                    <img src="pabiliiiii\Customer6\17.png">
+                    <img src="pabiliiiii\Customer6\18.png">
+                    <img src="pabiliiiii\Customer6\19.png">
+                    <img src="pabiliiiii\Customer6\20.png">
+                    <img src="pabiliiiii\Customer6\21.png">
+                    <img src="pabiliiiii\Customer6\22.png">
+                    <img src="pabiliiiii\Customer6\23.png">
+                    <img src="pabiliiiii\Customer6\24.png">
+                    <img src="pabiliiiii\Customer6\25.png">
+                    <img src="pabiliiiii\Customer6\26.png">
+                    <img src="pabiliiiii\Customer6\27.png">
+                </div>
+
+                <div class="caption">Customer 6 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer7\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer7\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer7\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer7\01.png">
+                    <img src="pabiliiiii\Customer7\02.png">
+                    <img src="pabiliiiii\Customer7\03.png">
+                    <img src="pabiliiiii\Customer7\04.png">
+                    <img src="pabiliiiii\Customer7\05.png">
+                    <img src="pabiliiiii\Customer7\06.png">
+                    <img src="pabiliiiii\Customer7\07.png">
+                    <img src="pabiliiiii\Customer7\09.png">
+                    <img src="pabiliiiii\Customer7\10.png">
+                    <img src="pabiliiiii\Customer7\11.png">
+                    <img src="pabiliiiii\Customer7\12.png">
+                    <img src="pabiliiiii\Customer7\13.png">
+                    <img src="pabiliiiii\Customer7\14.png">
+                    <img src="pabiliiiii\Customer7\15.png">
+                    <img src="pabiliiiii\Customer7\16.png">
+                    <img src="pabiliiiii\Customer7\17.png">
+                    <img src="pabiliiiii\Customer7\18.png">
+                    <img src="pabiliiiii\Customer7\19.png">
+                    <img src="pabiliiiii\Customer7\20.png">
+                    <img src="pabiliiiii\Customer7\21.png">
+                    <img src="pabiliiiii\Customer7\22.png">
+                    <img src="pabiliiiii\Customer7\23.png">
+                    <img src="pabiliiiii\Customer7\24.png">
+                    <img src="pabiliiiii\Customer7\25.png">
+                    <img src="pabiliiiii\Customer7\26.png">
+                    <img src="pabiliiiii\Customer7\27.png">
+                    <img src="pabiliiiii\Customer7\28.png">
+                </div>
+
+                <div class="caption">Customer 7 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\Customer8\01.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\Customer8\02.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\Customer8\03.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\Customer8\01.png">
+                    <img src="pabiliiiii\Customer8\02.png">
+                    <img src="pabiliiiii\Customer8\03.png">
+                    <img src="pabiliiiii\Customer8\04.png">
+                    <img src="pabiliiiii\Customer8\05.png">
+                    <img src="pabiliiiii\Customer8\06.png">
+                    <img src="pabiliiiii\Customer8\07.png">
+                    <img src="pabiliiiii\Customer8\08.png">
+                    <img src="pabiliiiii\Customer8\09.png">
+                    <img src="pabiliiiii\Customer8\10.png">
+                    <img src="pabiliiiii\Customer8\11.png">
+                    <img src="pabiliiiii\Customer8\12.png">
+                    <img src="pabiliiiii\Customer8\13.png">
+                    <img src="pabiliiiii\Customer8\14.png">
+                    <img src="pabiliiiii\Customer8\15.png">
+                    <img src="pabiliiiii\Customer8\16.png">
+                    <img src="pabiliiiii\Customer8\17.png">
+                    <img src="pabiliiiii\Customer8\18.png">
+                    <img src="pabiliiiii\Customer8\18a.png">
+                    <img src="pabiliiiii\Customer8\18b.png">
+                    <img src="pabiliiiii\Customer8\19.png">
+                    <img src="pabiliiiii\Customer8\19a.png">
+                    <img src="pabiliiiii\Customer8\20.png">
+                    <img src="pabiliiiii\Customer8\21.png">
+                    <img src="pabiliiiii\Customer8\22.png">
+                    <img src="pabiliiiii\Customer8\23.png">
+                    <img src="pabiliiiii\Customer8\24.png">
+                </div>
+
+                <div class="caption">Customer 8 Expression Frames</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\hands\c12.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\hands\c3.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\hands\c4.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\hands\c12.png">
+                    <img src="pabiliiiii\hands\c3.png">
+                    <img src="pabiliiiii\hands\c4.png">
+                    <img src="pabiliiiii\hands\c5.png">
+                    <img src="pabiliiiii\hands\c6.png">
+                    <img src="pabiliiiii\hands\c7.png">
+                    <img src="pabiliiiii\hands\c8.png">
+                </div>
+
+                <div class="caption">Customer Hand Buttons</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pabiliiiii\concepts\concept1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pabiliiiii\concepts\concept2.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pabiliiiii\concepts\concept3.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pabiliiiii\concepts\concept1.png">
+                    <img src="pabiliiiii\concepts\concept2.png">
+                    <img src="pabiliiiii\concepts\concept3.png">
+                    <img src="pabiliiiii\concepts\concept4.png">
+                    <img src="pabiliiiii\concepts\concept5.png">
+                    <img src="pabiliiiii\concepts\concept6.png">
+                    <img src="pabiliiiii\concepts\concept7.png">
+                    <img src="pabiliiiii\concepts\concept8.png">
+                    <img src="pabiliiiii\concepts\concept9.png">
+                    <img src="pabiliiiii\concepts\concepta10.png">
+                    <img src="pabiliiiii\concepts\concepta11.png">
+                    <img src="pabiliiiii\concepts\concepta12.png">
+                    <img src="pabiliiiii\concepts\concepta13.png">
+                    <img src="pabiliiiii\concepts\concepta14.png">
+                    <img src="pabiliiiii\concepts\concepta15.png">
+                    <img src="pabiliiiii\concepts\concepta16.png">
+                    <img src="pabiliiiii\concepts\concepta17.png">
+                    <img src="pabiliiiii\concepts\concepta18.png">
+                    <img src="pabiliiiii\concepts\concepta19.png">
+                    <img src="pabiliiiii\concepts\concepta20.png">
+                    <img src="pabiliiiii\concepts\concepta21.png">
+                    <img src="pabiliiiii\concepts\concepta22.png">
+                    <img src="pabiliiiii\concepts\concepta23.png">
+                </div>
+
+                <div class="caption">Concepts</div>
+            </div>
+    </section>
+
+    <footer>
+        <div>Thank you for visiting my portfolio!</div>
+        <div>
+        <p><i class="fas fa-phone"></i> +639554454483</p>
+        <p><i class="fas fa-envelope"></i> sheilamaeyu01@gmail.com</p>
+        </div>
+        <div class="socials">
+        <a href="http://www.linkedin.com/in/sheila-yu-236073396"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/639554454483"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/639554454483"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <div class="top-btn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="scripttt.js"></script>
+
+    <div id="imageViewer" class="image-viewer">
+        <span id="viewerCaption" class="viewer-caption"></span>
+        <span id="viewerNumber" class="viewer-number"></span>
+        <span class="close-btn" onclick="closeViewer()">&times;</span>
+
+        <img id="viewerImg" src="">
+
+        <div id="carousel" class="carousel">
+            <div class="carousel-wrapper">
+                <button class="nav left" onclick="prevSlide()">&#10094;</button>
+                <img id="carouselImg">
+                <button class="nav right" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <div id="dots" class="dots"></div>
+        </div>
+    </div>
+
+</body>
+</html>
