@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila Yu | Project 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+
+    <header>
+    <h3>My Portfolio</h3>
+        <nav>
+            <a href="Portfolio Website.html#home">Home</a>
+            <a href="Portfolio Website.html#about">About</a>
+            <a href="Portfolio Website.html#projects">Projects</a>
+            <a href="Portfolio Website.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="titlep" class="hero fade">
+        <h1><span id="namee">Pigment Wars</span></h1>
+        <p class="projectp">In my third game development project, I transitioned into a Project Manager role, 
+            coordinating timelines and milestones to ensure a smooth production cycle. I also served as a 
+            Technical Generalist, contributing across the board in Game Design, 3D Modeling/Animation, 
+            and C# Programming.</p>
+    </section>
+
+    <section id="pics" class="project fade">
+        <div class="projects">
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\pigmentwars_logo.png">
+                </div>
+                <div class="caption">Game Logo/Icon</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\TITLE.png">
+                </div>
+                <div class="caption">Title</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\logoteam.png">
+                </div>
+                <div class="caption">Team Logo</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\paintroller_player_red.jpeg">
+                </div>
+                <div class="caption">Character Concept 1</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\player_red.jpeg">
+                </div>
+                <div class="caption">Character Concept 2</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\robot_blue.jpeg">
+                </div>
+                <div class="caption">Enemy Concept</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\skybox1.png">
+                </div>
+                <div class="caption">Sky Box 1</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\skybox2.png">
+                </div>
+                <div class="caption">Sky Box 2</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\skybox3.png">
+                </div>
+                <div class="caption">Sky Box 3</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\playermoves\playeridle.gif">
+                </div>
+                <div class="caption">Player Idle</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\playermoves\playerjump.gif">
+                </div>
+                <div class="caption">Player Jump</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="pigment wars\playermoves\playerrun.gif">
+                </div>
+                <div class="caption">Player Run</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pigment wars\ui\arena1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pigment wars\ui\arena2.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pigment wars\ui\arena3.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pigment wars\ui\arena1.png">
+                    <img src="pigment wars\ui\arena2.png">
+                    <img src="pigment wars\ui\arena3.png">
+                    <img src="pigment wars\ui\ready1.png">
+                    <img src="pigment wars\ui\ready2.png">
+                    <img src="pigment wars\ui\exit1.png">
+                    <img src="pigment wars\ui\exit2.png">
+                    <img src="pigment wars\ui\menu1.png">
+                    <img src="pigment wars\ui\menu2.png">
+                    <img src="pigment wars\ui\settings1.png">
+                    <img src="pigment wars\ui\settings2.png">
+                    <img src="pigment wars\ui\bgm1.png">
+                    <img src="pigment wars\ui\bgm2.png">
+                    <img src="pigment wars\ui\bgmmute.png">
+                    <img src="pigment wars\ui\sfx1.png">
+                    <img src="pigment wars\ui\sfx2.png">
+                    <img src="pigment wars\ui\sfxmute.png">
+                    <img src="pigment wars\ui\back1.png">
+                    <img src="pigment wars\ui\back2.png">
+                    <img src="pigment wars\ui\play1.png">
+                    <img src="pigment wars\ui\play2.png">
+                    <img src="pigment wars\ui\yes1.png">
+                    <img src="pigment wars\ui\yes2.png">
+                    <img src="pigment wars\ui\no1.png">
+                    <img src="pigment wars\ui\no2.png">
+                    <img src="pigment wars\ui\createlobby1.png">
+                    <img src="pigment wars\ui\createlobby2.png">
+                    <img src="pigment wars\ui\createprivate1.png">
+                    <img src="pigment wars\ui\createprivate2.png">
+                    <img src="pigment wars\ui\createpublic1.png">
+                    <img src="pigment wars\ui\createpublic2.png">
+                    <img src="pigment wars\ui\joinprivte1.png">
+                    <img src="pigment wars\ui\joinprivte2.png">
+                    <img src="pigment wars\ui\mainmenu1.png">
+                    <img src="pigment wars\ui\mainmenu2.png">
+                    <img src="pigment wars\ui\quickjoin1.png">
+                    <img src="pigment wars\ui\quickjoin2.png">
+                    <img src="pigment wars\ui\vs1.png">
+                    <img src="pigment wars\ui\vs2.png">
+                    <img src="pigment wars\ui\vs3.png">
+                </div>
+
+                <div class="caption">User Interface</div>
+            </div>
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pigment wars\concepts\concepttitlescreen.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pigment wars\concepts\concept1.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pigment wars\concepts\concept2.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pigment wars\concepts\concepttitlescreen.png">
+                    <img src="pigment wars\concepts\concept1.png">
+                    <img src="pigment wars\concepts\concept2.png">
+                    <img src="pigment wars\concepts\concept3.png">
+                    <img src="pigment wars\concepts\concept4.png">
+                    <img src="pigment wars\concepts\concept5.png">
+                    <img src="pigment wars\concepts\concept6.png">
+                    <img src="pigment wars\concepts\concept7.png">
+                    <img src="pigment wars\concepts\concept8.png">
+                    <img src="pigment wars\concepts\concept9.png">
+                </div>
+
+                <div class="caption">Scene Design Concepts</div>
+            </div>
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pigment wars\concepts\mapconcept1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pigment wars\concepts\mapconcept2.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pigment wars\concepts\mapconcept3.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pigment wars\concepts\mapconcept1.png">
+                    <img src="pigment wars\concepts\mapconcept2.png">
+                    <img src="pigment wars\concepts\mapconcept3.png">
+                </div>
+
+                <div class="caption">Map Design Concepts</div>
+            </div>
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="pigment wars\concepts\powerupconcept2.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="pigment wars\concepts\powerupconcept3.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="pigment wars\concepts\powerupconcept4.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="pigment wars\concepts\powerupconcept2.png">
+                    <img src="pigment wars\concepts\powerupconcept3.png">
+                    <img src="pigment wars\concepts\powerupconcept4.png">
+                    <img src="pigment wars\concepts\powerupconcept1.png">
+                </div>
+
+                <div class="caption">Powerup Design Concepts</div>
+            </div>
+    </section>
+
+    <footer>
+        <div>Thank you for visiting my portfolio!</div>
+        <div>
+        <p><i class="fas fa-phone"></i> +639554454483</p>
+        <p><i class="fas fa-envelope"></i> sheilamaeyu01@gmail.com</p>
+        </div>
+        <div class="socials">
+        <a href="http://www.linkedin.com/in/sheila-yu-236073396"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/639554454483"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/639554454483"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <div class="top-btn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="scripttt.js"></script>
+
+    <div id="imageViewer" class="image-viewer">
+        <span id="viewerCaption" class="viewer-caption"></span>
+        <span id="viewerNumber" class="viewer-number"></span>
+        <span class="close-btn" onclick="closeViewer()">&times;</span>
+
+        <img id="viewerImg" src="">
+
+        <div id="carousel" class="carousel">
+            <div class="carousel-wrapper">
+                <button class="nav left" onclick="prevSlide()">&#10094;</button>
+                <img id="carouselImg">
+                <button class="nav right" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <div id="dots" class="dots"></div>
+        </div>
+    </div>
+</body>
+</html>
