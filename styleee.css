@@ -255,6 +255,7 @@ form input, form textarea
     border-radius:5px;
     background:#ffffff0f;
     color: #fff;
+    resize: none;
 }
 
 form input:focus, form textarea:focus
