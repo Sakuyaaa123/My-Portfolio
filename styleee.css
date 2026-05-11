@@ -478,6 +478,23 @@ footer
     transform: scale(1.3);
 }
 
+/* Change the white background of autofilled input fields */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    /* Replace #2d2d2d with your actual section/input background color */
+    -webkit-box-shadow: 0 0 0px 1000px #2d2d2d inset !important;
+    
+    /* This changes the text color of the autofilled text */
+    -webkit-text-fill-color: white !important;
+    
+    /* Matches your font style */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 @media (max-width: 1024px) {
     section {
         padding: 80px 30px;
