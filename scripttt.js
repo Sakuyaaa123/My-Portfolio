@@ -1,7 +1,7 @@
 const texts = [
+    "Game Developer",
     "Technical Game Designer",
-    "Multi-Disciplinary Artist",
-    "UI/UX & Graphic Designer"
+    "Multi-Disciplinary Artist"
 ];
 
 let textIndex = 0;
