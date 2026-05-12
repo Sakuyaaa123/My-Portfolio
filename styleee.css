@@ -96,6 +96,9 @@ section
     border-radius:8px;
     cursor:pointer;
     transition:.3s;
+    text-decoration: none;
+    display: inline-block;
+    color:#000;
 }
 
 .btn:hover
