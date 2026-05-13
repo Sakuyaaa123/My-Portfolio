@@ -146,12 +146,12 @@ section
     padding: 20px 0;
     margin-top: 20px;
     border-radius:10px;
-    background:#0e0e0e71;
+    background:#1e1e1e71;
 }
 
 .skill
 {
-    background:#0e0e0e71;
+    background:rgba(255,255,255,0.05);
     padding:15px;
     border-radius:10px;
     backdrop-filter:blur(5px);
@@ -166,7 +166,7 @@ section
 
 .main
 {
-    background:#0e0e0e71;
+    background:#1e1e1e71;
     border-radius:12px;
     overflow:hidden;
 }
@@ -260,7 +260,7 @@ form input, form textarea
     margin:10px 0;
     border:none;
     border-radius:5px;
-    background:#0e0e0e71;
+    background:rgba(255,255,255,0.05);
     color: #fff;
     resize: none;
 }
