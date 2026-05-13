@@ -6,6 +6,10 @@
     scroll-behavior:smooth;
 }
 
+html, body { 
+    overflow-x: hidden; 
+}
+
 body
 {
     background-image: url(gradentbg.png);
@@ -18,8 +22,9 @@ body
 
 header
 {
-    position:sticky;
+    position:fixed;
     top:0;
+    width: 100%;
     background: linear-gradient(rgba(8, 28, 114, 0.7), rgba(0, 128, 0, 0));
     backdrop-filter:blur(10px);
     padding:15px 50px;
@@ -79,6 +84,7 @@ section
     justify-content:center;
     text-align:center;
     background-image: url(grid.png);
+    margin-top: 60px;
 }
 
 .hero h1
@@ -577,19 +583,9 @@ footer
 }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
     #pics
     {
         padding: 50px 20px;
-    }
-
-    header nav {
-        margin-top: 10px;
     }
 
     section {
@@ -632,6 +628,8 @@ footer
 
     .nav.left { left: 10px; }
     .nav.right { right: 10px; }
+
+    header {padding: 15px;}
 }
 
 @media (max-width: 597px) {
@@ -649,9 +647,18 @@ footer
         bottom: -80px;
         right: -150px;
     }
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
 
-    .circlep {
-        padding: 25px;
+    header nav {
+        margin-top: 10px;
+    }
+
+    .hero {
+        margin-top: 100px;;
     }
 }
 
