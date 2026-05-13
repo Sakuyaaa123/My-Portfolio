@@ -116,6 +116,11 @@ section
     transform:scale(1.05);
 }
 
+.btn a {
+    text-decoration: none;
+    color:#000;
+}
+
 .socials a
 {
     margin:10px;
