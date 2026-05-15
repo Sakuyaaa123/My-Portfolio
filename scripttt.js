@@ -1,7 +1,7 @@
 const texts = [
-    "Game Developer",
     "Technical Game Designer",
-    "Multi-Disciplinary Artist"
+    "Multi-Disciplinary Artist",
+    "UI/UX & Graphic Designer"
 ];
 
 let textIndex = 0;
@@ -110,32 +110,49 @@ let isFolderOutside = false;
 function openViewer(card) {
     const viewer = document.getElementById("imageViewer");
     const viewerImg = document.getElementById("viewerImg");
+    const viewerVideo = document.getElementById("viewerVideo");
+    const viewerEmbed = document.getElementById("viewerEmbed");
+    const embedContainer = document.getElementById("embedContainer"); // Get the container
     const carousel = document.getElementById("carousel");
-    const carouselImg = document.getElementById("carouselImg");
-    const dotsContainer = document.getElementById("dots");
     const viewerNumber = document.getElementById("viewerNumber");
     const caption = card.querySelector(".caption").innerText;
 
     document.getElementById("viewerCaption").textContent = caption;
 
-    const isFolder = card.dataset.folder === "true";
+    // Hide everything initially
+    viewerImg.style.display = "none";
+    viewerVideo.style.display = "none";
+    embedContainer.style.display = "none"; // Hide container
+    carousel.style.display = "none";
+    viewerNumber.style.display = "none";
+    
+    viewerVideo.pause();
+    viewerVideo.src = "";
+    viewerEmbed.src = "";
 
-    if (isFolder) {
-        viewerImg.style.display = "none";
+    const isFolder = card.dataset.folder === "true";
+    const isVideo = card.dataset.video === "true";
+    const isEmbed = card.dataset.embed === "true";
+
+    if (isEmbed) {
+        embedContainer.style.display = "block";
+        viewerEmbed.src = card.dataset.src; // This should ONLY be the URL string
+    }
+    else if (isVideo) {
+        viewerVideo.style.display = "block";
+        viewerVideo.src = card.dataset.src;
+        viewerVideo.play();
+    } 
+    else if (isFolder) {
         carousel.style.display = "block";
         viewerNumber.style.display = "block";
-
         const imgs = card.querySelectorAll(".carousel-data img");
         carouselImages = Array.from(imgs).map(img => img.src);
-
         currentSlide = 0;
         updateCarousel();
-
-    } else {
-        carousel.style.display = "none";
+    } 
+    else {
         viewerImg.style.display = "block";
-        viewerNumber.style.display = "none";
-
         const img = card.querySelector("img").src;
         viewerImg.src = img;
     }
@@ -146,9 +163,16 @@ function openViewer(card) {
 
 function closeViewer() {
     const viewer = document.getElementById("imageViewer");
+    const viewerVideo = document.getElementById("viewerVideo");
+    const viewerEmbed = document.getElementById("viewerEmbed");
+    const embedContainer = document.getElementById("embedContainer");
+
+    viewerVideo.pause();
+    viewerVideo.src = ""; 
+    viewerEmbed.src = ""; 
+    if (embedContainer) embedContainer.style.display = "none"; // Clean up on close
 
     viewer.style.display = "none";
-
     document.body.style.overflow = "auto";
 }
 
