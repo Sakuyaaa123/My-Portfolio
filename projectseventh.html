@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila Yu | Project 6</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styleee.css">
+    <link rel="icon" type="image/png" href="MYLOGO.png">
+</head>
+<body>
+
+    <header>
+    <h2>Sheila's Portfolio</h2>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Works</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="titlep" class="hero fade">
+        <div class="circlep">
+            <h1><span id="namee">Pixel Art</span></h1>
+            <p class="projectp">A collection of personal works created for fun and outside of my professional work. I hope you enjoy the view!</p>
+        </div>
+    </section>
+
+    <section id="pics" class="project fade">
+        <h1 class="projecttop topname">Gallery</h1>
+        <div class="projects">
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/mikuFanart.png">
+                </div>
+                <div class="caption">Hatsune Miku Fanart</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/girlArt.png">
+                </div>
+                <div class="caption">Girl</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/mystaFanart.png">
+                </div>
+                <div class="caption">Mysta Rias Fanart</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/wandererFanart.png">
+                </div>
+                <div class="caption">Wanderer Fanart</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/albanFanart.png">
+                </div>
+                <div class="caption">Alban Knox Fanart</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/fantasyElf.png">
+                </div>
+                <div class="caption">Elf</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/finalCharacterIllus.png">
+                </div>
+                <div class="caption">Celine (OC) Illustration</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="mineee/skill1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="mineee/skill2.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="mineee/celinePose.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="mineee/skill1.png">
+                    <img src="mineee/skill2.png">
+                    <img src="mineee/celinePose.png">
+                </div>
+                <div class="caption">Celine Works</div>
+            </div>
+          
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/girlTAFinal.gif">
+                </div>
+                <div class="caption">Alice (OC) Turnaround</div>
+            </div>
+            <div class="card" onclick="openViewer(this)">
+                <div class="main">
+                    <img src="mineee/colored2.png">
+                </div>
+                <div class="caption">Alice Colored</div>
+            </div>
+
+            <div class="card" onclick="openViewer(this)" data-folder="true">
+                <div class="main">
+                    <div class="folder">
+                        <img src="stack10.png" id="imgstack">
+                        <div class="stacking">
+                            <img src="mineee/colored1.png" alt="Bottom Image" class="stack-card card-1">
+                            <img src="mineee/colored3.png" alt="Middle Image" class="stack-card card-2">
+                            <img src="mineee/girlTAFrames.png" alt="Top Image" class="stack-card card-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-data" style="display:none;">
+                    <img src="mineee/colored1.png">
+                    <img src="mineee/colored3.png">
+                    <img src="mineee/girlTAFrames.png">
+                    <img src="mineee/pose1.png">
+                    <img src="mineee/pose2.png">
+                    <img src="mineee/pose3.png">
+                    <img src="mineee/pose4.png">
+                    <img src="mineee/sketchTA.png">
+                </div>
+
+                <div class="caption">Alice Draft Collection</div>
+            </div>
+          
+          <div class="card" onclick="openViewer(this)" data-embed="true" data-src="https://www.youtube.com/embed/U9M9JtLBpBA">
+              <div class="main">
+                  <img src="mineee/thumbnail1.png">
+              </div>
+              <div class="caption">Animation (The Sweet Odyssey)</div>
+          </div>
+          
+          <div class="card" onclick="openViewer(this)" data-video="true" data-src="mineee/animationnn.mp4">
+              <div class="main">
+                  <img src="mineee/thumbnail1.png">
+              </div>
+              <div class="caption">Animation (Waves)</div>
+          </div>
+          
+    </section>
+
+    <footer>
+        <div>Thank you for visiting my portfolio!</div>
+        <div>
+        <p><i class="fas fa-phone"></i> +639554454483</p>
+        <p><i class="fas fa-envelope"></i> sheilamaeyu01@gmail.com</p>
+        </div>
+        <div class="socials">
+        <a href="http://www.linkedin.com/in/sheila-yu-236073396"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/639554454483"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/639554454483"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <div class="top-btn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="scripttt.js"></script>
+  
+<div id="imageViewer" class="image-viewer">
+    <span id="viewerCaption" class="viewer-caption"></span>
+    <span id="viewerNumber" class="viewer-number"></span>
+    <span class="close-btn" onclick="closeViewer()">&times;</span>
+
+    <img id="viewerImg" src="" style="display:none;">
+
+    <video id="viewerVideo" controls style="display:none; width:90%; max-height:80vh; border-radius:10px;"></video>
+
+    <div id="embedContainer" style="display:none; width: 90%; max-width: 800px;">
+        <iframe id="viewerEmbed" src="" style="width:100%; height:100%; border:none; border-radius:10px;" allow="autoplay"></iframe>
+    </div>
+
+    <div id="carousel" class="carousel">
+        <div class="carousel-wrapper">
+            <button class="nav left" onclick="prevSlide()">&#10094;</button>
+            <img id="carouselImg">
+            <button class="nav right" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div id="dots" class="dots"></div>
+    </div>
+</div>
+</body>
+</html>
