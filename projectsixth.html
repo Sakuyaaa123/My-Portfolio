@@ -109,21 +109,26 @@
     <div class="top-btn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></div>
 
     <script src="scripttt.js"></script>
-
+  
     <div id="imageViewer" class="image-viewer">
         <span id="viewerCaption" class="viewer-caption"></span>
         <span id="viewerNumber" class="viewer-number"></span>
         <span class="close-btn" onclick="closeViewer()">&times;</span>
-
-        <img id="viewerImg" src="">
-
+    
+        <img id="viewerImg" src="" style="display:none;">
+    
+        <video id="viewerVideo" controls style="display:none; width:90%; max-height:80vh; border-radius:10px;"></video>
+    
+        <div id="embedContainer" style="display:none; width: 90%; max-width: 800px;">
+            <iframe id="viewerEmbed" src="" style="width:100%; height:100%; border:none; border-radius:10px;" allow="autoplay"></iframe>
+        </div>
+    
         <div id="carousel" class="carousel">
             <div class="carousel-wrapper">
                 <button class="nav left" onclick="prevSlide()">&#10094;</button>
                 <img id="carouselImg">
                 <button class="nav right" onclick="nextSlide()">&#10095;</button>
             </div>
-
             <div id="dots" class="dots"></div>
         </div>
     </div>
