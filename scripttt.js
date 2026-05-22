@@ -116,6 +116,7 @@ function openViewer(card) {
     const carousel = document.getElementById("carousel");
     const viewerNumber = document.getElementById("viewerNumber");
     const caption = card.querySelector(".caption").innerText;
+    const pixelImg = card.querySelector(".pixel");
 
     document.getElementById("viewerCaption").textContent = caption;
 
@@ -155,6 +156,10 @@ function openViewer(card) {
         viewerImg.style.display = "block";
         const img = card.querySelector("img").src;
         viewerImg.src = img;
+
+        if (pixelImg) {
+            viewerImg.style.imageRendering = "pixelated";
+        }
     }
 
     viewer.style.display = "flex";
