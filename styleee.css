@@ -219,6 +219,10 @@ section
     height: 100%;
 }
 
+.pixel {
+    image-rendering: pixelated;
+}
+
 #imgstack {
     position: absolute;
     bottom: 8px;
